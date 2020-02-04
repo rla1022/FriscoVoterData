@@ -1,0 +1,685 @@
+2020-02-04 02:41:15,249691 (MainThread): Running with dbt=0.15.2
+2020-02-04 02:41:15,601039 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,601170 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,601228 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,601275 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,601394 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,610778 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,613467 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,624780 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,624876 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,624922 (MainThread): invalid escape sequence \_
+2020-02-04 02:41:15,764702 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/randyarchambault/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-02-04 02:41:15,766168 (MainThread): Tracking: tracking
+2020-02-04 02:41:15,773737 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbd750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbdbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbd450>]}
+2020-02-04 02:41:16,108414 (MainThread): Partial parsing not enabled
+2020-02-04 02:41:16,111844 (MainThread): Parsing macros/core.sql
+2020-02-04 02:41:16,117372 (MainThread): Parsing macros/materializations/helpers.sql
+2020-02-04 02:41:16,126739 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-02-04 02:41:16,129078 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-02-04 02:41:16,148462 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-02-04 02:41:16,170346 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-02-04 02:41:16,192590 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-02-04 02:41:16,195145 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-02-04 02:41:16,202795 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-02-04 02:41:16,211726 (MainThread): Parsing macros/materializations/table/table.sql
+2020-02-04 02:41:16,219789 (MainThread): Parsing macros/materializations/view/view.sql
+2020-02-04 02:41:16,227054 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-02-04 02:41:16,233228 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-02-04 02:41:16,234810 (MainThread): Parsing macros/etc/query.sql
+2020-02-04 02:41:16,236701 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-02-04 02:41:16,239114 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-02-04 02:41:16,241884 (MainThread): Parsing macros/etc/datetime.sql
+2020-02-04 02:41:16,251910 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-02-04 02:41:16,254887 (MainThread): Parsing macros/adapters/common.sql
+2020-02-04 02:41:16,287676 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-02-04 02:41:16,289482 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-02-04 02:41:16,290931 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-02-04 02:41:16,292602 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-02-04 02:41:16,295992 (MainThread): Parsing macros/etc.sql
+2020-02-04 02:41:16,297472 (MainThread): Parsing macros/catalog.sql
+2020-02-04 02:41:16,301860 (MainThread): Parsing macros/adapters.sql
+2020-02-04 02:41:16,318765 (MainThread): Parsing macros/materializations/merge.sql
+2020-02-04 02:41:16,320435 (MainThread): Parsing macros/materializations/seed.sql
+2020-02-04 02:41:16,323481 (MainThread): Parsing macros/materializations/view.sql
+2020-02-04 02:41:16,325655 (MainThread): Parsing macros/materializations/table.sql
+2020-02-04 02:41:16,336497 (MainThread): Parsing macros/materializations/incremental.sql
+2020-02-04 02:41:16,343655 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-02-04 02:41:16,369396 (MainThread): Partial parsing not enabled
+2020-02-04 02:41:16,388241 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:41:16,388426 (MainThread): Opening a new connection, currently in state init
+2020-02-04 02:41:16,410064 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:41:16,410236 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,417089 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:41:16,417286 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,453269 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_first_dbt_model_id".
+2020-02-04 02:41:16,453455 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,469032 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_first_dbt_model_id".
+2020-02-04 02:41:16,469228 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,483189 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_second_dbt_model_id".
+2020-02-04 02:41:16,483375 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,493499 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_second_dbt_model_id".
+2020-02-04 02:41:16,493675 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:16,507893 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-02-04 02:41:16,602443 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 138 macros, 0 operations, 0 seed files, 0 sources
+2020-02-04 02:41:16,611794 (MainThread): 
+2020-02-04 02:41:16,613131 (MainThread): Acquiring new bigquery connection "master".
+2020-02-04 02:41:16,613392 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:17,155223 (MainThread): 20:41:17 | Concurrency: 1 threads (target='dev')
+2020-02-04 02:41:17,155591 (MainThread): 20:41:17 | 
+2020-02-04 02:41:17,164225 (Thread-1): Began running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:41:17,164530 (Thread-1): 20:41:17 | 1 of 3 START table model FriscoVoterID.my_first_dbt_model............ [RUN]
+2020-02-04 02:41:17,165203 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:41:17,165499 (Thread-1): Opening a new connection, currently in state init
+2020-02-04 02:41:17,165731 (Thread-1): Compiling model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:41:17,190456 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:41:17,191712 (Thread-1): finished collecting timing info
+2020-02-04 02:41:17,383618 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:41:17,385359 (Thread-1): On model.FriscoVoterDB.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_first_dbt_model"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-02-04 02:41:20,256375 (Thread-1): finished collecting timing info
+2020-02-04 02:41:20,257750 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '271ac3c7-b284-4584-8e90-6de15b776de0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebbf590>]}
+2020-02-04 02:41:20,481381 (Thread-1): 20:41:20 | 1 of 3 OK created table model FriscoVoterID.my_first_dbt_model....... [CREATE TABLE (2) in 3.09s]
+2020-02-04 02:41:20,481843 (Thread-1): Finished running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:41:20,482206 (Thread-1): Began running node model.FriscoVoterDB.sample
+2020-02-04 02:41:20,483060 (Thread-1): 20:41:20 | 2 of 3 START view model FriscoVoterID.sample......................... [RUN]
+2020-02-04 02:41:20,483613 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:41:20,483787 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.my_first_dbt_model).
+2020-02-04 02:41:20,483934 (Thread-1): Compiling model.FriscoVoterDB.sample
+2020-02-04 02:41:20,495859 (Thread-1): finished collecting timing info
+2020-02-04 02:41:20,496490 (Thread-1): Compilation Error in model sample (models/sample.sql)
+  'confif' is undefined
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/clients/jinja.py", line 358, in render_template
+    return template.render(ctx)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 1, in top-level template code
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: 'confif' is undefined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 218, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 155, in compile_and_execute
+    ctx.node = self.compile(manifest)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 322, in compile
+    return compile_node(self.adapter, self.config, self.node, manifest, {})
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/compilation.py", line 234, in compile_node
+    node = compiler.compile_node(node, manifest, extra_context)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/compilation.py", line 136, in compile_node
+    node)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/clients/jinja.py", line 371, in get_rendered
+    return render_template(template, ctx, node)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/clients/jinja.py", line 363, in render_template
+    dbt.exceptions.raise_compiler_error(str(e), node)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/exceptions.py", line 363, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model sample (models/sample.sql)
+  'confif' is undefined
+2020-02-04 02:41:20,503075 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '271ac3c7-b284-4584-8e90-6de15b776de0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eca94d0>]}
+2020-02-04 02:41:20,713660 (Thread-1): 20:41:20 | 2 of 3 ERROR creating view model FriscoVoterID.sample................ [ERROR in 0.02s]
+2020-02-04 02:41:20,713904 (Thread-1): Finished running node model.FriscoVoterDB.sample
+2020-02-04 02:41:20,714180 (Thread-1): Began running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:41:20,714528 (Thread-1): 20:41:20 | 3 of 3 START view model FriscoVoterID.my_second_dbt_model............ [RUN]
+2020-02-04 02:41:20,715059 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:41:20,715244 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.sample).
+2020-02-04 02:41:20,715398 (Thread-1): Compiling model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:41:20,725189 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:41:20,725704 (Thread-1): finished collecting timing info
+2020-02-04 02:41:20,749794 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:41:20,750710 (Thread-1): On model.FriscoVoterDB.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_second_dbt_model"} */
+
+
+  create or replace view `voterdata-235521`.`FriscoVoterID`.`my_second_dbt_model`
+  OPTIONS()
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+where id = 1
+  );
+
+2020-02-04 02:41:21,499868 (Thread-1): finished collecting timing info
+2020-02-04 02:41:21,500752 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '271ac3c7-b284-4584-8e90-6de15b776de0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed7cd10>]}
+2020-02-04 02:41:21,725250 (Thread-1): 20:41:21 | 3 of 3 OK created view model FriscoVoterID.my_second_dbt_model....... [CREATE VIEW in 0.79s]
+2020-02-04 02:41:21,725499 (Thread-1): Finished running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:41:21,803240 (MainThread): 20:41:21 | 
+2020-02-04 02:41:21,803609 (MainThread): 20:41:21 | Finished running 1 table model, 2 view models in 5.19s.
+2020-02-04 02:41:21,804061 (MainThread): Connection 'master' was left open.
+2020-02-04 02:41:21,804294 (MainThread): Connection 'model.FriscoVoterDB.my_second_dbt_model' was left open.
+2020-02-04 02:41:21,815339 (MainThread): 
+2020-02-04 02:41:21,815579 (MainThread): Completed with 1 error and 0 warnings:
+2020-02-04 02:41:21,815840 (MainThread): 
+2020-02-04 02:41:21,816047 (MainThread): Compilation Error in model sample (models/sample.sql)
+2020-02-04 02:41:21,816260 (MainThread):   'confif' is undefined
+2020-02-04 02:41:21,816472 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+2020-02-04 02:41:21,816795 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee13e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee216d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee21110>]}
+2020-02-04 02:41:22,27383 (MainThread): Flushing usage events
+2020-02-04 02:41:57,605063 (MainThread): Running with dbt=0.15.2
+2020-02-04 02:41:57,806690 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/randyarchambault/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-02-04 02:41:57,807524 (MainThread): Tracking: tracking
+2020-02-04 02:41:57,814093 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110faab10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f79a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110faa990>]}
+2020-02-04 02:41:58,57224 (MainThread): Partial parsing not enabled
+2020-02-04 02:41:58,59537 (MainThread): Parsing macros/core.sql
+2020-02-04 02:41:58,64343 (MainThread): Parsing macros/materializations/helpers.sql
+2020-02-04 02:41:58,72003 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-02-04 02:41:58,73979 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-02-04 02:41:58,92913 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-02-04 02:41:58,114213 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-02-04 02:41:58,133726 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-02-04 02:41:58,136007 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-02-04 02:41:58,143303 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-02-04 02:41:58,152284 (MainThread): Parsing macros/materializations/table/table.sql
+2020-02-04 02:41:58,159445 (MainThread): Parsing macros/materializations/view/view.sql
+2020-02-04 02:41:58,166378 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-02-04 02:41:58,172125 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-02-04 02:41:58,173376 (MainThread): Parsing macros/etc/query.sql
+2020-02-04 02:41:58,174763 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-02-04 02:41:58,176855 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-02-04 02:41:58,179393 (MainThread): Parsing macros/etc/datetime.sql
+2020-02-04 02:41:58,188924 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-02-04 02:41:58,191314 (MainThread): Parsing macros/adapters/common.sql
+2020-02-04 02:41:58,222756 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-02-04 02:41:58,224306 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-02-04 02:41:58,225499 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-02-04 02:41:58,226831 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-02-04 02:41:58,229550 (MainThread): Parsing macros/etc.sql
+2020-02-04 02:41:58,230552 (MainThread): Parsing macros/catalog.sql
+2020-02-04 02:41:58,234123 (MainThread): Parsing macros/adapters.sql
+2020-02-04 02:41:58,249595 (MainThread): Parsing macros/materializations/merge.sql
+2020-02-04 02:41:58,250780 (MainThread): Parsing macros/materializations/seed.sql
+2020-02-04 02:41:58,253091 (MainThread): Parsing macros/materializations/view.sql
+2020-02-04 02:41:58,254805 (MainThread): Parsing macros/materializations/table.sql
+2020-02-04 02:41:58,265045 (MainThread): Parsing macros/materializations/incremental.sql
+2020-02-04 02:41:58,271332 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-02-04 02:41:58,296338 (MainThread): Partial parsing not enabled
+2020-02-04 02:41:58,314494 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:41:58,314668 (MainThread): Opening a new connection, currently in state init
+2020-02-04 02:41:58,336416 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:41:58,336595 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,343223 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:41:58,343394 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,376065 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_first_dbt_model_id".
+2020-02-04 02:41:58,376271 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,392212 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_first_dbt_model_id".
+2020-02-04 02:41:58,392391 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,406265 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_second_dbt_model_id".
+2020-02-04 02:41:58,406448 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,416240 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_second_dbt_model_id".
+2020-02-04 02:41:58,416438 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,430061 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-02-04 02:41:58,494197 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 138 macros, 0 operations, 0 seed files, 0 sources
+2020-02-04 02:41:58,499776 (MainThread): 
+2020-02-04 02:41:58,500477 (MainThread): Acquiring new bigquery connection "master".
+2020-02-04 02:41:58,500657 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:41:58,996144 (MainThread): 20:41:58 | Concurrency: 1 threads (target='dev')
+2020-02-04 02:41:58,996381 (MainThread): 20:41:58 | 
+2020-02-04 02:41:58,999414 (Thread-1): Began running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:41:58,999725 (Thread-1): 20:41:58 | 1 of 3 START table model FriscoVoterID.my_first_dbt_model............ [RUN]
+2020-02-04 02:41:59,203 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:41:59,366 (Thread-1): Opening a new connection, currently in state init
+2020-02-04 02:41:59,508 (Thread-1): Compiling model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:41:59,18787 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:41:59,19321 (Thread-1): finished collecting timing info
+2020-02-04 02:41:59,205882 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:41:59,206836 (Thread-1): On model.FriscoVoterDB.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_first_dbt_model"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-02-04 02:42:01,827650 (Thread-1): finished collecting timing info
+2020-02-04 02:42:01,828592 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '456d79b4-a54c-4675-bf34-ffbdba498ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110f8fd0>]}
+2020-02-04 02:42:02,53501 (Thread-1): 20:42:02 | 1 of 3 OK created table model FriscoVoterID.my_first_dbt_model....... [CREATE TABLE (2) in 2.83s]
+2020-02-04 02:42:02,53761 (Thread-1): Finished running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:42:02,53988 (Thread-1): Began running node model.FriscoVoterDB.sample
+2020-02-04 02:42:02,54348 (Thread-1): 20:42:02 | 2 of 3 START table model FriscoVoterID.sample........................ [RUN]
+2020-02-04 02:42:02,54946 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:42:02,55109 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.my_first_dbt_model).
+2020-02-04 02:42:02,55263 (Thread-1): Compiling model.FriscoVoterDB.sample
+2020-02-04 02:42:02,62949 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.sample"
+2020-02-04 02:42:02,63475 (Thread-1): finished collecting timing info
+2020-02-04 02:42:02,69613 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.sample"
+2020-02-04 02:42:02,70158 (Thread-1): On model.FriscoVoterDB.sample: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.sample"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM 'bigquery-public-data.stackoverflow.posts_questions'
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-02-04 02:42:02,270756 (Thread-1): Not Retrying after 0 previous attempts. Error: BadRequest("Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]")
+2020-02-04 02:42:02,271064 (Thread-1): Bad request while running:
+/* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.sample"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *
+FROM 'bigquery-public-data.stackoverflow.posts_questions'
+ORDER BY view_count DESC
+LIMIT 1
+  );
+    
+2020-02-04 02:42:02,271267 (Thread-1): 400 Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+
+(job ID: 0b7005df-3cf1-4cb7-a565-847195197d52)
+
+                                                          -----Query Job SQL Follows-----                                                          
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.sample"} */
+   2:
+   3:
+   4:  create or replace table `voterdata-235521`.`FriscoVoterID`.`sample`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    
+  10:SELECT *
+  11:FROM 'bigquery-public-data.stackoverflow.posts_questions'
+  12:ORDER BY view_count DESC
+  13:LIMIT 1
+  14:  );
+  15:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+2020-02-04 02:42:02,271561 (Thread-1): finished collecting timing info
+2020-02-04 02:42:02,272149 (Thread-1): Database Error in model sample (models/sample.sql)
+  Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+  compiled SQL at target/run/FriscoVoterDB/sample.sql
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 81, in exception_handler
+    yield
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 342, in _retry_and_handle
+    deadline=None)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 208, in fn
+    return self._query_and_results(client, sql, conn, job_params)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 331, in _query_and_results
+    iterator = query_job.result(timeout=timeout)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/google/cloud/bigquery/job.py", line 3124, in result
+    super(QueryJob, self).result(timeout=timeout)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/google/cloud/bigquery/job.py", line 779, in result
+    return super(_AsyncJob, self).result(timeout=timeout)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/google/api_core/future/polling.py", line 127, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+
+(job ID: 0b7005df-3cf1-4cb7-a565-847195197d52)
+
+                                                          -----Query Job SQL Follows-----                                                          
+
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+   1:/* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.sample"} */
+   2:
+   3:
+   4:  create or replace table `voterdata-235521`.`FriscoVoterID`.`sample`
+   5:  
+   6:  
+   7:  OPTIONS()
+   8:  as (
+   9:    
+  10:SELECT *
+  11:FROM 'bigquery-public-data.stackoverflow.posts_questions'
+  12:ORDER BY view_count DESC
+  13:LIMIT 1
+  14:  );
+  15:    
+    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |    .    |
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 218, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 161, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 260, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/node_runners.py", line 436, in execute
+    result = materialization_macro.generator(context)()
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 209, in macro
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/clients/jinja.py", line 155, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/base/impl.py", line 276, in execute
+    fetch=fetch
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 217, in execute
+    query_job, iterator = self.raw_execute(sql, fetch=fetch)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 210, in raw_execute
+    query_job, iterator = self._retry_and_handle(msg=sql, conn=conn, fn=fn)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 342, in _retry_and_handle
+    deadline=None)
+  File "/usr/local/opt/python/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 85, in exception_handler
+    self.handle_error(e, message, sql)
+  File "/usr/local/Cellar/dbt/0.15.2_1/libexec/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 73, in handle_error
+    raise dbt.exceptions.DatabaseException(error_msg) from error
+dbt.exceptions.DatabaseException: Database Error in model sample (models/sample.sql)
+  Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+  compiled SQL at target/run/FriscoVoterDB/sample.sql
+2020-02-04 02:42:02,280407 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '456d79b4-a54c-4675-bf34-ffbdba498ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111115490>]}
+2020-02-04 02:42:02,500013 (Thread-1): 20:42:02 | 2 of 3 ERROR creating table model FriscoVoterID.sample............... [ERROR in 0.23s]
+2020-02-04 02:42:02,500263 (Thread-1): Finished running node model.FriscoVoterDB.sample
+2020-02-04 02:42:02,500558 (Thread-1): Began running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:42:02,500910 (Thread-1): 20:42:02 | 3 of 3 START view model FriscoVoterID.my_second_dbt_model............ [RUN]
+2020-02-04 02:42:02,501348 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:42:02,501490 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.sample).
+2020-02-04 02:42:02,501613 (Thread-1): Compiling model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:42:02,511383 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:42:02,511992 (Thread-1): finished collecting timing info
+2020-02-04 02:42:02,534873 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:42:02,535832 (Thread-1): On model.FriscoVoterDB.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_second_dbt_model"} */
+
+
+  create or replace view `voterdata-235521`.`FriscoVoterID`.`my_second_dbt_model`
+  OPTIONS()
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+where id = 1
+  );
+
+2020-02-04 02:42:03,263298 (Thread-1): finished collecting timing info
+2020-02-04 02:42:03,264187 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '456d79b4-a54c-4675-bf34-ffbdba498ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c8d610>]}
+2020-02-04 02:42:03,495181 (Thread-1): 20:42:03 | 3 of 3 OK created view model FriscoVoterID.my_second_dbt_model....... [CREATE VIEW in 0.76s]
+2020-02-04 02:42:03,495440 (Thread-1): Finished running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:42:03,539516 (MainThread): 20:42:03 | 
+2020-02-04 02:42:03,539786 (MainThread): 20:42:03 | Finished running 2 table models, 1 view model in 5.04s.
+2020-02-04 02:42:03,540086 (MainThread): Connection 'master' was left open.
+2020-02-04 02:42:03,540356 (MainThread): Connection 'model.FriscoVoterDB.my_second_dbt_model' was left open.
+2020-02-04 02:42:03,550405 (MainThread): 
+2020-02-04 02:42:03,550741 (MainThread): Completed with 1 error and 0 warnings:
+2020-02-04 02:42:03,551916 (MainThread): 
+2020-02-04 02:42:03,552873 (MainThread): Database Error in model sample (models/sample.sql)
+2020-02-04 02:42:03,553317 (MainThread):   Syntax error: Unexpected string literal 'bigquery-public-data.stackoverflow.posts_questions' at [11:6]
+2020-02-04 02:42:03,553877 (MainThread):   compiled SQL at target/run/FriscoVoterDB/sample.sql
+2020-02-04 02:42:03,554441 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+2020-02-04 02:42:03,554934 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bad110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111d8690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111e79d0>]}
+2020-02-04 02:42:03,794024 (MainThread): Flushing usage events
+2020-02-04 02:46:56,733609 (MainThread): Running with dbt=0.15.2
+2020-02-04 02:46:56,938704 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/randyarchambault/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-02-04 02:46:56,939382 (MainThread): Tracking: tracking
+2020-02-04 02:46:56,947210 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f0bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c91f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1121f0ad0>]}
+2020-02-04 02:46:57,233815 (MainThread): Partial parsing not enabled
+2020-02-04 02:46:57,238286 (MainThread): Parsing macros/core.sql
+2020-02-04 02:46:57,248699 (MainThread): Parsing macros/materializations/helpers.sql
+2020-02-04 02:46:57,268995 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-02-04 02:46:57,273726 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-02-04 02:46:57,298053 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-02-04 02:46:57,328097 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-02-04 02:46:57,359911 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-02-04 02:46:57,363209 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-02-04 02:46:57,372000 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-02-04 02:46:57,380037 (MainThread): Parsing macros/materializations/table/table.sql
+2020-02-04 02:46:57,387316 (MainThread): Parsing macros/materializations/view/view.sql
+2020-02-04 02:46:57,394619 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-02-04 02:46:57,401839 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-02-04 02:46:57,403234 (MainThread): Parsing macros/etc/query.sql
+2020-02-04 02:46:57,404853 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-02-04 02:46:57,406941 (MainThread): Parsing macros/etc/get_relation_comment.sql
+2020-02-04 02:46:57,409391 (MainThread): Parsing macros/etc/datetime.sql
+2020-02-04 02:46:57,419690 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-02-04 02:46:57,422125 (MainThread): Parsing macros/adapters/common.sql
+2020-02-04 02:46:57,465065 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-02-04 02:46:57,467059 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-02-04 02:46:57,468440 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-02-04 02:46:57,469855 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-02-04 02:46:57,472665 (MainThread): Parsing macros/etc.sql
+2020-02-04 02:46:57,473594 (MainThread): Parsing macros/catalog.sql
+2020-02-04 02:46:57,477236 (MainThread): Parsing macros/adapters.sql
+2020-02-04 02:46:57,496184 (MainThread): Parsing macros/materializations/merge.sql
+2020-02-04 02:46:57,497410 (MainThread): Parsing macros/materializations/seed.sql
+2020-02-04 02:46:57,499891 (MainThread): Parsing macros/materializations/view.sql
+2020-02-04 02:46:57,501669 (MainThread): Parsing macros/materializations/table.sql
+2020-02-04 02:46:57,512318 (MainThread): Parsing macros/materializations/incremental.sql
+2020-02-04 02:46:57,519029 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-02-04 02:46:57,544592 (MainThread): Partial parsing not enabled
+2020-02-04 02:46:57,562874 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:46:57,563052 (MainThread): Opening a new connection, currently in state init
+2020-02-04 02:46:57,586054 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:46:57,586391 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,595963 (MainThread): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:46:57,597395 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,630864 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_first_dbt_model_id".
+2020-02-04 02:46:57,631046 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,648141 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_first_dbt_model_id".
+2020-02-04 02:46:57,648312 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,662982 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.unique_my_second_dbt_model_id".
+2020-02-04 02:46:57,663161 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,672710 (MainThread): Acquiring new bigquery connection "test.FriscoVoterDB.not_null_my_second_dbt_model_id".
+2020-02-04 02:46:57,672880 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:57,686980 (MainThread): WARNING: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.my_new_project.example
+
+2020-02-04 02:46:57,752828 (MainThread): Found 3 models, 4 tests, 0 snapshots, 0 analyses, 138 macros, 0 operations, 0 seed files, 0 sources
+2020-02-04 02:46:57,757125 (MainThread): 
+2020-02-04 02:46:57,757785 (MainThread): Acquiring new bigquery connection "master".
+2020-02-04 02:46:57,757950 (MainThread): Opening a new connection, currently in state closed
+2020-02-04 02:46:58,313544 (MainThread): 20:46:58 | Concurrency: 1 threads (target='dev')
+2020-02-04 02:46:58,313784 (MainThread): 20:46:58 | 
+2020-02-04 02:46:58,316587 (Thread-1): Began running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:46:58,316880 (Thread-1): 20:46:58 | 1 of 3 START table model FriscoVoterID.my_first_dbt_model............ [RUN]
+2020-02-04 02:46:58,317331 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_first_dbt_model".
+2020-02-04 02:46:58,317492 (Thread-1): Opening a new connection, currently in state init
+2020-02-04 02:46:58,317637 (Thread-1): Compiling model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:46:58,336162 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:46:58,336755 (Thread-1): finished collecting timing info
+2020-02-04 02:46:58,519477 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_first_dbt_model"
+2020-02-04 02:46:58,520364 (Thread-1): On model.FriscoVoterDB.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_first_dbt_model"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-02-04 02:47:00,429048 (Thread-1): finished collecting timing info
+2020-02-04 02:47:00,430022 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1f409978-4713-4ebb-8e1a-11a50d8518c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c39050>]}
+2020-02-04 02:47:00,643350 (Thread-1): 20:47:00 | 1 of 3 OK created table model FriscoVoterID.my_first_dbt_model....... [CREATE TABLE (2) in 2.11s]
+2020-02-04 02:47:00,643620 (Thread-1): Finished running node model.FriscoVoterDB.my_first_dbt_model
+2020-02-04 02:47:00,643850 (Thread-1): Began running node model.FriscoVoterDB.sample
+2020-02-04 02:47:00,644213 (Thread-1): 20:47:00 | 2 of 3 START table model FriscoVoterID.sample........................ [RUN]
+2020-02-04 02:47:00,644823 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.sample".
+2020-02-04 02:47:00,644988 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.my_first_dbt_model).
+2020-02-04 02:47:00,645121 (Thread-1): Compiling model.FriscoVoterDB.sample
+2020-02-04 02:47:00,653321 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.sample"
+2020-02-04 02:47:00,653898 (Thread-1): finished collecting timing info
+2020-02-04 02:47:00,659924 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.sample"
+2020-02-04 02:47:00,660663 (Thread-1): On model.FriscoVoterDB.sample: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.sample"} */
+
+
+  create or replace table `voterdata-235521`.`FriscoVoterID`.`sample`
+  
+  
+  OPTIONS()
+  as (
+    
+SELECT *  FROM `gdelt-bq.gdeltv2.events` LIMIT 10000
+  );
+    
+2020-02-04 02:47:04,678057 (Thread-1): finished collecting timing info
+2020-02-04 02:47:04,680231 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1f409978-4713-4ebb-8e1a-11a50d8518c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c39050>]}
+2020-02-04 02:47:04,916408 (Thread-1): 20:47:04 | 2 of 3 OK created table model FriscoVoterID.sample................... [CREATE TABLE (10000) in 4.03s]
+2020-02-04 02:47:04,916709 (Thread-1): Finished running node model.FriscoVoterDB.sample
+2020-02-04 02:47:04,917005 (Thread-1): Began running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:47:04,917367 (Thread-1): 20:47:04 | 3 of 3 START view model FriscoVoterID.my_second_dbt_model............ [RUN]
+2020-02-04 02:47:04,917885 (Thread-1): Acquiring new bigquery connection "model.FriscoVoterDB.my_second_dbt_model".
+2020-02-04 02:47:04,918035 (Thread-1): Re-using an available connection from the pool (formerly model.FriscoVoterDB.sample).
+2020-02-04 02:47:04,918173 (Thread-1): Compiling model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:47:04,928524 (Thread-1): Writing injected SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:47:04,929116 (Thread-1): finished collecting timing info
+2020-02-04 02:47:04,954779 (Thread-1): Writing runtime SQL for node "model.FriscoVoterDB.my_second_dbt_model"
+2020-02-04 02:47:04,955745 (Thread-1): On model.FriscoVoterDB.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.15.2", "profile_name": "my-bigquery-db", "target_name": "dev", "node_id": "model.FriscoVoterDB.my_second_dbt_model"} */
+
+
+  create or replace view `voterdata-235521`.`FriscoVoterID`.`my_second_dbt_model`
+  OPTIONS()
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `voterdata-235521`.`FriscoVoterID`.`my_first_dbt_model`
+where id = 1
+  );
+
+2020-02-04 02:47:05,448408 (Thread-1): finished collecting timing info
+2020-02-04 02:47:05,449451 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1f409978-4713-4ebb-8e1a-11a50d8518c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11232aad0>]}
+2020-02-04 02:47:05,667560 (Thread-1): 20:47:05 | 3 of 3 OK created view model FriscoVoterID.my_second_dbt_model....... [CREATE VIEW in 0.53s]
+2020-02-04 02:47:05,667967 (Thread-1): Finished running node model.FriscoVoterDB.my_second_dbt_model
+2020-02-04 02:47:05,679288 (MainThread): 20:47:05 | 
+2020-02-04 02:47:05,679506 (MainThread): 20:47:05 | Finished running 2 table models, 1 view model in 7.92s.
+2020-02-04 02:47:05,679751 (MainThread): Connection 'master' was left open.
+2020-02-04 02:47:05,679886 (MainThread): Connection 'model.FriscoVoterDB.my_second_dbt_model' was left open.
+2020-02-04 02:47:05,690714 (MainThread): 
+2020-02-04 02:47:05,691053 (MainThread): Completed successfully
+2020-02-04 02:47:05,691289 (MainThread): 
+Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+2020-02-04 02:47:05,691641 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11225e810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11237ee10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112338d90>]}
+2020-02-04 02:47:05,921368 (MainThread): Flushing usage events
